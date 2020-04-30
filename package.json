@@ -6,7 +6,9 @@
     "doc": "docs",
     "test": "tests/js/tests"
   },
-  "dependencies": {},
+  "dependencies": {
+    "snyk": "^1.316.1"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "jsdom": "11.11.0",
@@ -16,7 +18,9 @@
     "sinon": "^1.17.6"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/js/tests/*.test.js --timeout 0"
+    "test": "./node_modules/.bin/mocha tests/js/tests/*.test.js --timeout 0",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -31,5 +35,6 @@
   "bugs": {
     "url": "https://github.com/yiisoft/yii2/issues"
   },
-  "homepage": "https://github.com/yiisoft/yii2"
+  "homepage": "https://github.com/yiisoft/yii2",
+  "snyk": true
 }
