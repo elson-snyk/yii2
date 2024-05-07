@@ -13,7 +13,7 @@
     "leche": "^2.2.3",
     "mocha": "^5.2.0",
     "mocha-jsdom": "^2.0.0",
-    "sinon": "^1.17.6"
+    "sinon": "^17.0.1"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/js/tests/*.test.js --timeout 0"
